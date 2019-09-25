@@ -1,10 +1,10 @@
 CC=gcc
-CFLAGS = -Werror -ggdb -m32 # use specific flags for gdb
+CFLAGS = -Werror -ggdb # use specific flags for gdb
 
-# src = $(wildcard *.c)
-# obj = $(src:.c=.o)
+src = $(wildcard *.c)
+obj = $(src:.c=.o)
 
-e1: e1.c
+e1: e1.o
 	$(CC) -o $@ $^ $(CCFLAGS)
 
 e2: e2.o
