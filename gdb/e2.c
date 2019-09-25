@@ -1,17 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Example 2: reading uninitialized memory
 
 int main(int argc, char** argv){
-  int i;
-  int a[10];
-  for (i = 0; i < 9; i++)
-    a[i] = i;
-    
-  for (i = 0; i < 10; i++){
-    printf("%d ", a[i]);
-  }
-  printf("\n");
+  int foo[1000];
+  for (int i =0; i<= 1050; i++){
+    foo[i] = i;
+  }  
   return 0;
 }
