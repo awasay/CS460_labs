@@ -10,6 +10,9 @@ int main(int argc, char** argv){
   for (i=0; i < 10; i++){
     a = malloc(sizeof(int) * 100);
   }
-  free(a);
+  for (i=0; i < 10; i++){
+    free(a[i]);
+  }
+  
   return 0;
 }
