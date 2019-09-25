@@ -1,15 +1,13 @@
-
 #include <stdio.h>
-#include <stdlib.h>
 
-// Example 3: memory leaks
-int main(int argc, char** argv){
-  int i;
-  int *a;
+int main(){
+  int i, num, j; /* j is uninitialized */
+  printf ("Enter the number: ");
+  scanf ("%d", &num );
 
-  for (i=0; i < 10; i++){
-    a = malloc(sizeof(int) * 100);
-  }
-  free(a);
-  return 0;
+  for (i=1; i<num; i++)
+    j=j*i;
+
+  printf("The factorial of %d is %d\n",num,j);
+
 }
