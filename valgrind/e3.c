@@ -11,7 +11,7 @@ int main(int argc, char** argv){
     a = malloc(sizeof(int) * 100);
   }
   for (i=0; i < 10; i++){
-    free(a[i]);
+    free(&a[i]);
   }
   
   return 0;
