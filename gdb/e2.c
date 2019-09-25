@@ -5,7 +5,7 @@ int main(int argc, char **argv)
 {
    char *buf;
 
-   buf = malloc(1<<31);
+   buf = malloc(1<<30);
 
    fgets(buf, 1024, stdin);
    printf("%s\n", buf);
