@@ -1,14 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+  #include <string.h>
+  #include <stdio.h>
 
-int main(int argc, char **argv)
-{
-   char *buf;
+  int main () {
+    int foo[5], n;
 
-   buf = malloc(1<<30);
+    memset((char *)0x0, 1, 100);
 
-   fgets(buf, 1024, stdin);
-   printf("%s\n", buf);
-
-   return 1;
-}
+    printf (" Initial value of n is %d \n", n);
+    return 0;
+  }

@@ -4,6 +4,8 @@ CFLAGS = -Werror -ggdb -O0 # use specific flags for gdb
 src = $(wildcard *.c)
 obj = $(src:.c=.o)
 
+default: e1 e2 e3
+
 e1: e1.o
 	$(CC) -o $@ $^ $(CCFLAGS)
 
