@@ -8,4 +8,5 @@ int main(int argc, char** argv){
     foo[i] = i;
   }  
   return 0;
+
 }

@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS = -Werror -ggdb # use specific flags for gdb
+CFLAGS = -Werror -ggdb -O0 # use specific flags for gdb
 
 src = $(wildcard *.c)
 obj = $(src:.c=.o)
